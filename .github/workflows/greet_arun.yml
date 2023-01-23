@@ -1,0 +1,21 @@
+name: arun-greet
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ "arunquery" ]
+  workflow_dispatch:
+   inputs:
+    name:
+     description: 'greet github'
+     default: 'github-world'
+     required: true
+
+jobs:
+  greetgithub:
+    runs-on: windows-latest
+    steps:
+    - name: send greetings
+      run: echo "Hello github ${{github.event.inputs.name}}"
