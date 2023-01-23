@@ -1,10 +1,16 @@
-name: Greetings
+name: github-greetings
 
-on: [pull_request_target, issues]
+on:
+ workflow_dispatch:
+  inputs:
+   name:
+    description: 'person to great'
+    default: 'world'
+    required: true
 
 jobs:
   greeting:
-    runs-on: github_arun
+    runs-on: windows-latest
     permissions:
       issues: write
       pull-requests: write
