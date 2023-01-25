@@ -1,4 +1,4 @@
-name: arun-greet
+name: arungreet
 
 on:
   push:
@@ -14,7 +14,7 @@ on:
      required: true
 
 jobs:
-  greetgithub:
+  greetarun:
     runs-on: windows-latest
     steps:
     - name: send greetings
