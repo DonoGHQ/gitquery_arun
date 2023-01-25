@@ -1,0 +1,16 @@
+name: hellogreet
+
+on:
+  workflow_dispatch:
+   inputs:
+    name:
+     description: 'greet git'
+     default: 'github-hello'
+     required: true
+
+jobs:
+  greethello:
+    runs-on: windows-latest
+    steps:
+    - name: say hello
+      run: echo "Hello git ${{github.event.inputs.name}}"
