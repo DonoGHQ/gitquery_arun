@@ -23,7 +23,7 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: github_arun
+    runs-on: codeql-arun
     permissions:
       actions: read
       contents: read
