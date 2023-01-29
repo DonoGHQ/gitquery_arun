@@ -13,3 +13,6 @@ print("split list: {}".format(split_list))
 print("security scanning to check python vulnerability")
 
 print("Final update")
+
+print("GITCODE_SECRET")
+print("GIT_ORG_SECRET")
