@@ -9,3 +9,5 @@ os.system('dir')
 input_location = 'C:\uptycs\githubquery\gitquery_arun\gittest\sample.py'
 split_list = os.path.split(input_location)
 print("split list: {}".format(split_list))
+
+print("security scanning to check python vulnerability")
